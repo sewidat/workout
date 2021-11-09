@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2">
+
+    <TextView
+        android:id="@+id/name2"
+        style="@style/secondPageTextView"
+        android:gravity="center"
+        android:text="@string/hello" />
+
+    <TextView
+        android:id="@+id/bmi"
+        style="@style/secondPageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name2"
+        android:gravity="center"
+        android:text="BMI" />
+
+    <View
+
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/bmi"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/msg"
+        style="@style/secondPageTextViewMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:gravity="center"
+        android:text="Choose Your workout" />
+
+    <Spinner
+        android:id="@+id/spinnerId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msg"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/page2Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerId"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        android:onClick="act3"
+        android:text="Go To Workout!"
+        android:textSize="30sp"
+     />
+</RelativeLayout>
